@@ -1,0 +1,785 @@
+<!--header.html-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./fonts/font.css">
+  <link rel="icon" type="image/png" href="./img/icons/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="./img/icons/favicon.ico">
+  <link rel="mask-icon" href="./img/icons/favicon.ico" color="#000000">
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+  />
+  <title></title>
+<script defer src="js/bundle.js"></script><script defer src="js/libs.js"></script><script defer src="js/style.js"></script><link href="css/style.min.css" rel="stylesheet"></head>
+<body>
+
+<div class="preloader">
+  <div class="logo">
+    <img src="./img/logo.webp" alt="">
+  </div>
+</div>
+
+<div class="fixed-widgets">
+
+  <div class="widgets-list">
+    <a href="#" class="widget-link widget-link-phone"></a>
+    <a href="#" class="widget-link widget-link-whatsapp"></a>
+    <a href="#" class="widget-link widget-link-telegram"></a>
+    <a href="#" class="widget-link widget-link-max"></a>
+  </div>
+
+  <div class="widgets-bottom">
+    <div class="text-widgets">Связаться с нами</div>
+
+    <button type="button" class="button-widgets"></button>
+
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-0 col-m-0">
+        <div class="menu-pc">
+          <ul class="main-menu">
+            <li>
+              <a href="#directions-section">Направления</a>
+            </li>
+            <li>
+              <a href="#features-section">Преимущества</a>
+            </li>
+            <li>
+              <a href="#services-section">Наши услуги</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-m-0">
+        <div class="logo">
+          <img src="./img/logo.webp" alt="">
+        </div>
+        <div class="menu-small-screens">
+          <button class="close-menu-button"></button>
+          <ul class="main-menu ">
+            <li>
+              <a href="#directions-section">Направления</a>
+            </li>
+            <li>
+              <a href="#features-section">Преимущества</a>
+            </li>
+            <li>
+              <a href="#attractions-section">Достопримечательности</a>
+            </li>
+            <li>
+              <a href="#services-section">Наши услуги</a>
+            </li>
+            <li>
+              <a href="#testimonials-section">Отзывы</a>
+            </li>
+            <li>
+              <a href="#footer">Контакты</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-green btn-mobile">Связаться</a>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-m-6">
+        <button class="mobile-menu-button">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <div class="menu-pc">
+          <ul class="main-menu">
+            <li>
+              <a href="#attractions-section">Достопримечательности</a>
+            </li>
+            <li>
+              <a href="#testimonials-section">Отзывы</a>
+            </li>
+            <li>
+              <a href="#footer">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+
+
+
+<section class="main-banner" style="background-image: url(./img/main-banner-back.webp)">
+  <div class="container">
+    <div class="banner-content">
+      <h1>КОМФОРТНЫЙ ТРАНСФЕР и ЗАКАЗ ТАКСИ</h1>
+      <div class="description">
+        <p>Эльбрус, Домбай, Архыз и другие красивые места Кавказа – трансфер из аэропортов и городов по фиксированной цене.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="popular-section slider-section animate-block" id="directions-section">
+  <div class="container">
+    <div class="decorated-h2">
+      <h2>ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-m-12">
+        <div class="direction-card">
+          <div class="card-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/direction-card1.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/direction-card2.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/direction-card3.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="card-price">от <span>4500₽</span></div>
+          <div class="card-title">Аэропорт Минеральные воды → Эльбрус</div>
+          <div class="card-meta">
+            <div class="card-distance">180 км</div>
+            <div class="card-time">3 часа в пути</div>
+          </div>
+          <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order" >Заказать трансфер</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-m-12">
+        <div class="direction-card ">
+          <div class="card-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/direction-card2.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/direction-card1.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/direction-card3.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="card-price">от <span>3500₽</span></div>
+          <div class="card-title">Аэропорт Минеральные воды → Эльбрус</div>
+          <div class="card-meta">
+            <div class="card-distance">180 км</div>
+            <div class="card-time">3 часа в пути</div>
+          </div>
+          <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order" >Заказать трансфер</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-m-12">
+        <div class="direction-card">
+          <div class="card-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/direction-card3.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/direction-card2.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/direction-card1.webp" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="card-price">от <span>4500₽</span></div>
+          <div class="card-title">Аэропорт Минеральные воды → Эльбрус</div>
+          <div class="card-meta">
+            <div class="card-distance">180 км</div>
+            <div class="card-time">3 часа в пути</div>
+          </div>
+          <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order" >Заказать трансфер</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section animate-block" id="features-section">
+  <div class="container">
+    <div class="decorated-h2">
+      <h2>НАШИ УНИКАЛЬНЫЕ Преимущества</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-m-12">
+        <div class="feature-card">
+          <div class="card-content">
+            <div class="card-title">ЛУЧШАЯ ЦЕНА</div>
+            <div class="card-description">
+              <p>Наши цены прозрачны и свободны от скрытых платежей и комиссий. У нас нет ненужных накруток и поэтому цена минимальна.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-m-12">
+        <div class="feature-card">
+          <div class="card-content">
+            <div class="card-title">ВНИМАНИЕ К КАЖДОМУ КЛИЕНТУ</div>
+            <div class="card-description">
+              <p>Наш персональный подход гарантирует не просто быстрое выполнение запроса, а точное понимание Ваших пожеланий. Мы уделяем особое внимание деталям и предлагаем варианты, соответствующие Вашим ожиданиям и бюджету.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-m-12">
+        <div class="feature-card">
+         <div class="card-content">
+           <div class="card-title">БЕЗОПАСНОСТЬ И НАДЕЖНОСТЬ</div>
+           <div class="card-description">
+             <p>У нас новые машины, водители с многолетним успешным опытом, международными удостоверениями и обязательной страховкой на каждую поездку.</p>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section slider-section animate-block" id="services-section">
+  <div class="container">
+    <div class="decorated-h2">
+      <h2>наши услуги</h2>
+    </div>
+    <div class="tabs-block">
+      <div class="tabs-nav">
+        <div class="tab-button">
+          <button data-tab-id="1" class="tab-btn">трансфер по Кавказу</button>
+        </div>
+        <div class="tab-button">
+          <button data-tab-id="2" class="tab-btn">трансфер на горнолыжные курорты</button>
+        </div>
+        <div class="tab-button">
+          <button data-tab-id="3" class="tab-btn">туры с гидом</button>
+        </div>
+        <div class="tab-button">
+          <button data-tab-id="4" class="tab-btn">тур на горячие источники</button>
+        </div>
+
+      </div>
+      <div class="tab-panels">
+        <div data-tab-id="1" class="tab-panel">
+          <div class="service-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="card-media card-video">
+                    <video poster="./img/service-card-img2.webp">
+                      <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                    </video>
+                    <button class="btn-play"></button>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">ПОЕЗДКА НА МИНИВЕНЕ</div>
+                    <div class="card-attributes">
+                      <div class="attribute trunk">
+                        <span>Багажник</span>
+                      </div>
+                      <div class="attribute new-car">
+                        <span>Новые машины </span>
+                      </div>
+                      <div class="attribute passengers">
+                        <span>до 6 пасс</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order">Заказать трансфер</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="card-media card-video">
+                    <video poster="./img/service-card-img1.webp">
+                      <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                    </video>
+                    <button class="btn-play"></button>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">ПОЕЗДКА НА легковой машине</div>
+                    <div class="card-attributes">
+                      <div class="attribute trunk">
+                        <span>Багажник</span>
+                      </div>
+                      <div class="attribute new-car">
+                        <span>Новые машины </span>
+                      </div>
+                      <div class="attribute passengers">
+                        <span>до 6 пасс</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order">Заказать трансфер</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div data-tab-id="2" class="tab-panel">
+          <div class="service-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="card-media">
+                    <img src="./img/service-card-img2.webp" alt="">
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">ПОЕЗДКА НА МИНИВЕНЕ</div>
+                    <div class="card-attributes">
+                      <div class="attribute trunk">
+                        <span>Багажник</span>
+                      </div>
+                      <div class="attribute new-car">
+                        <span>Новые машины </span>
+                      </div>
+                      <div class="attribute passengers">
+                        <span>до 6 пасс</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order">Заказать трансфер</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="card-media card-video">
+                    <video poster="./img/service-card-img1.webp">
+                      <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                    </video>
+                    <button class="btn-play"></button>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">ПОЕЗДКА НА легковой машине</div>
+                    <div class="card-attributes">
+                      <div class="attribute trunk">
+                        <span>Багажник</span>
+                      </div>
+                      <div class="attribute new-car">
+                        <span>Новые машины </span>
+                      </div>
+                      <div class="attribute passengers">
+                        <span>до 6 пасс</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order">Заказать трансфер</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div data-tab-id="3" class="tab-panel">
+          <div class="service-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="card-media card-video">
+                    <video poster="./img/service-card-img2.webp">
+                      <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                    </video>
+                    <button class="btn-play"></button>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">ПОЕЗДКА НА МИНИВЕНЕ</div>
+                    <div class="card-attributes">
+                      <div class="attribute trunk">
+                        <span>Багажник</span>
+                      </div>
+                      <div class="attribute new-car">
+                        <span>Новые машины </span>
+                      </div>
+                      <div class="attribute passengers">
+                        <span>до 6 пасс</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order">Заказать трансфер</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="card-media card-video">
+                    <video poster="./img/service-card-img1.webp">
+                      <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                    </video>
+                    <button class="btn-play"></button>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">ПОЕЗДКА НА легковой машине</div>
+                    <div class="card-attributes">
+                      <div class="attribute trunk">
+                        <span>Багажник</span>
+                      </div>
+                      <div class="attribute new-car">
+                        <span>Новые машины </span>
+                      </div>
+                      <div class="attribute passengers">
+                        <span>до 6 пасс</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order">Заказать трансфер</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div data-tab-id="4" class="tab-panel">
+          <div class="service-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="card-media card-video">
+                    <video poster="./img/service-card-img2.webp">
+                      <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                    </video>
+                    <button class="btn-play"></button>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">ПОЕЗДКА НА МИНИВЕНЕ</div>
+                    <div class="card-attributes">
+                      <div class="attribute trunk">
+                        <span>Багажник</span>
+                      </div>
+                      <div class="attribute new-car">
+                        <span>Новые машины </span>
+                      </div>
+                      <div class="attribute passengers">
+                        <span>до 6 пасс</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order">Заказать трансфер</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-card">
+                  <div class="card-media card-video">
+                    <video poster="./img/service-card-img1.webp">
+                      <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                    </video>
+                    <button class="btn-play"></button>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-title">ПОЕЗДКА НА легковой машине</div>
+                    <div class="card-attributes">
+                      <div class="attribute trunk">
+                        <span>Багажник</span>
+                      </div>
+                      <div class="attribute new-car">
+                        <span>Новые машины </span>
+                      </div>
+                      <div class="attribute passengers">
+                        <span>до 6 пасс</span>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-green open-modal-dialog" data-src="modal-order">Заказать трансфер</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-section animate-block" style="background-image: url(./img/quote-section-back.webp)">
+  <div class="container">
+    <h2>«КАЖДАЯ ПОЕЗДКА ПО СЕВЕРНОМУ КАВКАЗУ ДЕЛАЕТ ВАС БОГАЧЕ ВПЕЧАТЛЕНИЯМИ И СВОБОДОЙ ДОРОГИ»</h2>
+  </div>
+</section>
+
+<section class="attractions-section slider-section animate-block" id="attractions-section">
+  <div class="container">
+    <div class="decorated-h2">
+      <h2>ТОП-10 <br> ДОСТОПРИМЕЧАТЕЛЬНОСТЕЙ КАВКАЗА</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-m-12">
+        <div class="card-item">
+          <div class="card-image-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="video-wrapper">
+                  <video poster="./img/card-img-1.webp">
+                    <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                  </video>
+                  <div class="btn-play"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-wrapper">
+                  <video poster="./img/card-img-2.webp">
+                    <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                  </video>
+                  <div class="btn-play"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-wrapper">
+                  <video poster="./img/card-img-3.webp">
+                    <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                  </video>
+                  <div class="btn-play"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-title">Чегемские водопады</div>
+            <div class="card-location">Чегемский район Кабардино‑Балкарии</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-m-12">
+        <div class="card-item">
+          <div class="card-image-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="video-wrapper">
+                  <video poster="./img/card-img-2.webp">
+                    <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                  </video>
+                  <div class="btn-play"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-wrapper">
+                  <video poster="./img/card-img-3.webp">
+                    <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                  </video>
+                  <div class="btn-play"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-wrapper">
+                  <video poster="./img/card-img-1.webp">
+                    <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                  </video>
+                  <div class="btn-play"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-title">Замок Шато‑Эркен</div>
+            <div class="card-location">Кабардино-Балкарская Республика</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-m-12">
+        <div class="card-item">
+          <div class="card-image-slider slider-wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="video-wrapper">
+                  <video poster="./img/card-img-3.webp">
+                    <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                  </video>
+                  <div class="btn-play"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-wrapper">
+                  <video poster="./img/card-img-2.webp">
+                    <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                  </video>
+                  <div class="btn-play"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-wrapper">
+                  <video poster="./img/card-img-1.webp">
+                    <source src="./img/adobestock-515194866_Jt2tm8rv.mp4">
+                  </video>
+                  <div class="btn-play"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-title">Термальный источник «Гедуко»</div>
+            <div class="card-location">Кабардино-Балкарская Республика</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section slider-section animate-block" id="testimonials-section">
+  <div class="container">
+    <div class="decorated-h2">
+      <h2>Отзывы</h2>
+    </div>
+    <div class="testimonials-slider slider-wrapper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial">
+            <div class="testimonial-head">
+              <div class="testimonial-avatar">
+                <img src="./img/avatar.webp" alt="">
+              </div>
+              <div class="testimonial-author">Фамилия Имя</div>
+            </div>
+            <div class="testimonial-text">
+              <p>Замечательно, насыщенно, познавательно. Гид знаток традиций. Постоянно показывала где едем и какие в данном районе обычаи. Очень заботливая, внимательно относилась к нашим просьбам. </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial">
+            <div class="testimonial-head">
+              <div class="testimonial-avatar">
+                <img src="./img/avatar.webp" alt="">
+              </div>
+              <div class="testimonial-author">Фамилия Имя</div>
+            </div>
+            <div class="testimonial-text">
+              <p>Замечательно, насыщенно, познавательно. Гид знаток традиций. Постоянно показывала где едем и какие в данном районе обычаи. Очень заботливая, внимательно относилась к нашим просьбам. </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial">
+            <div class="testimonial-head">
+              <div class="testimonial-avatar">
+                <img src="./img/avatar.webp" alt="">
+              </div>
+              <div class="testimonial-author">Фамилия Имя</div>
+            </div>
+            <div class="testimonial-text">
+              <p>Замечательно, насыщенно, познавательно. Гид знаток традиций. Постоянно показывала где едем и какие в данном районе обычаи. Очень заботливая, внимательно относилась к нашим просьбам. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+<section class="full-image-section animate-block" style="background-image: url(./img/full-image-section-back.webp)"></section>
+
+<!--footer.html-->
+</main>
+
+<footer class="footer animate-block" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-12 col-m-12">
+          <div class="logo">
+            <img src="./img/logo-footer.svg" alt="">
+          </div>
+          <div class="footer-socials footer-socials-pc">
+            <a href="#" class="social-link social-link-phone"></a>
+            <a href="#" class="social-link social-link-whatsapp"></a>
+            <a href="#" class="social-link social-link-telegram"></a>
+            <a href="#" class="social-link social-link-max"></a>
+          </div>
+          <div class="footer-buttons footer-buttons-mobile">
+            <a href="#" class="btn btn-green">Написать в телеграмм</a>
+            <a href="#" class="btn btn-green">Написать в WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-m-6">
+          <nav class="footer-nav">
+            <div class="menu-title">Меню</div>
+            <ul class="footer-menu">
+              <li>
+                <a href="#directions-section">Направления</a>
+              </li>
+              <li>
+                <a href="#services-section">Наши услуги</a>
+              </li>
+              <li>
+                <a href="#testimonials-section">Отзывы</a>
+              </li>
+              <li>
+                <a href="#features-section">Преимущества</a>
+              </li>
+              <li>
+                <a href="#attractions-section">Достопримечательности</a>
+              </li>
+              <li>
+                <a href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-4 col-md-6 col-m-6">
+          <a href="tel:79647247505" class="footer-phone">+ 7 (964) 724-75-05</a>
+          <div class="footer-socials footer-socials-mobile">
+            <a href="#" class="social-link social-link-phone"></a>
+            <a href="#" class="social-link social-link-whatsapp"></a>
+            <a href="#" class="social-link social-link-telegram"></a>
+            <a href="#" class="social-link social-link-max"></a>
+          </div>
+          <div class="footer-buttons footer-buttons-pc">
+            <a href="#" class="btn btn-green">Написать в телеграмм</a>
+            <a href="#" class="btn btn-green">Написать в WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<div class="modal-dialog modal-order" style="display: none;">
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="modal-title">Вы можете оформить заказ через одну из наших социальных сетей</div>
+      <div class="modal-socials">
+        <a href="#" class="social-link social-link-phone"></a>
+        <a href="#" class="social-link social-link-whatsapp"></a>
+        <a href="#" class="social-link social-link-telegram"></a>
+        <a href="#" class="social-link social-link-max"></a>
+      </div>
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</body>
+</html>
+
