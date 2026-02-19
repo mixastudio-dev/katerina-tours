@@ -615,3 +615,26 @@ if (document.readyState === 'complete') {
     }, 500);
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const cardSliders = document.querySelectorAll('.services-section .service-card-slider');
+
+  cardSliders.forEach((slider, index) => {
+    new Swiper(slider, {
+      observer: true,
+      observeParents: true,
+      observeSlideChildren: true,
+      watchSlidesProgress: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      effect: "fade",
+      speed: 500,
+      loop: true,
+      navigation: {
+        nextEl: slider.querySelector('.swiper-button-next'),
+        prevEl: slider.querySelector('.swiper-button-prev'),
+      },
+    });
+  });
+
+});
