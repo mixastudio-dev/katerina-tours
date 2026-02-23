@@ -375,6 +375,7 @@ class CustomVideoPlayer {
     this.video.setAttribute('playsinline', '');
     this.video.setAttribute('webkit-playsinline', '');
     this.video.setAttribute('preload', 'metadata');
+    this.video.muted = true;
 
     this.playButton.style.opacity = '1';
     this.playButton.style.transition = 'opacity 0.3s ease';
@@ -410,11 +411,12 @@ class CustomVideoPlayer {
 
   play() {
     if (this.video.paused) {
+      this.video.muted = true;
+
       const playPromise = this.video.play();
 
       if (playPromise !== undefined) {
         playPromise.catch(error => {
-          console.log('Видео не может быть воспроизведено автоматически');
           this.video.setAttribute('controls', '');
           this.playButton.style.display = 'none';
         });
