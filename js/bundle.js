@@ -377,15 +377,35 @@ class CustomVideoPlayer {
     this.video.setAttribute('preload', 'metadata');
     this.video.muted = true;
 
-    this.playButton.style.opacity = '1';
-    this.playButton.style.transition = 'opacity 0.3s ease';
+    this.poster = this.video.getAttribute('poster');
+
+    if (!this.poster) {
+      this.showPlayButton();
+    } else {
+      this.video.addEventListener('loadeddata', () => {
+        this.showPlayButton();
+      });
+    }
 
     this.bindEvents();
+  }
+
+  showPlayButton() {
+    this.playButton.style.opacity = '1';
+    this.playButton.style.transition = 'opacity 0.3s ease';
+    this.playButton.style.pointerEvents = 'auto';
   }
 
   bindEvents() {
     this.container.addEventListener('click', (e) => {
       e.stopPropagation();
+
+      if (this.video.readyState === 0) {
+        this.video.load();
+        this.showPlayButton();
+        return;
+      }
+
       this.toggleVideo(e);
     });
 
@@ -397,6 +417,12 @@ class CustomVideoPlayer {
     this.video.addEventListener('play', () => this.onPlay());
     this.video.addEventListener('pause', () => this.onPause());
     this.video.addEventListener('ended', () => this.onEnded());
+
+    this.video.addEventListener('error', () => {
+      console.log('Ошибка загрузки видео');
+      this.container.style.background = '#f0f0f0';
+      this.playButton.style.display = 'flex';
+    });
   }
 
   toggleVideo(e) {
@@ -417,6 +443,7 @@ class CustomVideoPlayer {
 
       if (playPromise !== undefined) {
         playPromise.catch(error => {
+          console.log('Видео не может быть воспроизведено автоматически');
           this.video.setAttribute('controls', '');
           this.playButton.style.display = 'none';
         });
@@ -459,7 +486,6 @@ document.addEventListener('DOMContentLoaded', function() {
     new CustomVideoPlayer(container);
   });
 });
-
 var swiper1 = new Swiper(".testimonials-slider", {
   observer: true,
   observeParents: true,
